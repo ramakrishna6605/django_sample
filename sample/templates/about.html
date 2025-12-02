@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #4b2ff5, #27b0f0);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 850px;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(15px);
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+            animation: fadeSlide 1.3s ease-in-out;
+        }
+
+        @keyframes fadeSlide {
+            from {
+                opacity: 0;
+                transform: translateY(35px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            text-align: center;
+            color: #fff;
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            color: #eaeaea;
+            font-size: 22px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        p {
+            color: #fff;
+            font-size: 18px;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .highlight {
+            color: #ffe066;
+            font-weight: bold;
+        }
+
+        .btn-box {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .btn-box a {
+            display: inline-block;
+            background: #fff;
+            padding: 12px 28px;
+            border-radius: 10px;
+            color: #4b2ff5;
+            font-size: 18px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn-box a:hover {
+            transform: scale(1.06);
+            background: #e6e6e6;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>About Us</h1>
+        <h3>Your Trusted Platform</h3>
+
+        <p>
+            Welcome to our platform! We aim to provide the best experience through 
+            innovative design and modern technology. Our goal is to make everything 
+            <span class="highlight">simple, fast, and reliable</span>.
+        </p>
+
+        <p>
+            This project is built using Django and includes beautifully designed pages 
+            with animations, unique styles, and modern color themes to enhance user experience.
+        </p>
+
+        <p>
+            Thank you for visiting! Feel free to explore more pages like 
+            <span class="highlight">Login</span> and <span class="highlight">Registration</span>.
+        </p>
+
+        <div class="btn-box">
+            <a href="/">Go to Home</a>
+        </div>
+    </div>
+
+</body>
+</html>

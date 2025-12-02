@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #4b2ff5, #27b0f0);
+            min-height: 100vh;
+            color: #fff;
+        }
+
+        /* NAVBAR */
+        nav {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            backdrop-filter: blur(10px);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        }
+
+        nav .logo {
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-size: 17px;
+            color: #fff;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: yellow;
+            transform: scale(1.08);
+        }
+
+        .hero {
+            text-align: center;
+            padding-top: 170px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 600px;
+            margin: auto;
+            opacity: 0.9;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <nav>
+        <div class="logo">MyWebsite</div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/contact/">Contact</a></li>
+            <li><a href="/login/">Login</a></li>
+            <li><a href="/register/">Registration</a></li>
+        </ul>
+    </nav>
+
+    <!-- HOME CONTENT -->
+    <div class="hero">
+        <h1>Welcome to Our Website</h1>
+        <p>
+            This is a modern homepage with a smooth animated navigation bar. 
+            Click any menu item above to visit the corresponding page.
+        </p>
+    </div>
+
+</body>
+</html>
