@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-u#onzg)v1cv*7@4mti#+$&r65pfo8#zwv5(7wl#ke^-_rzy-dt
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["django-sample-bntv.onrender.com","localhost","127.0.0.1","127.0.0.1:8000"]
 
 
 # Application definition
